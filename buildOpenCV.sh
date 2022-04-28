@@ -3,15 +3,15 @@
 # Copyright(c) JetsonHacks (2017-2019)
 
 OPENCV_VERSION=4.1.1
-# Jetson Nano
-ARCH_BIN=5.3
+# Jetson Xavier NX
+ARCH_BIN=7.2
 INSTALL_DIR=/usr/local
 # Download the opencv_extras repository
 # If you are installing the opencv testdata, ie
 #  OPENCV_TEST_DATA_PATH=../opencv_extra/testdata
 # Make sure that you set this to YES
 # Value should be YES or NO
-DOWNLOAD_OPENCV_EXTRAS=NO
+DOWNLOAD_OPENCV_EXTRAS=YES
 # Source code directory
 OPENCV_SOURCE_DIR=$HOME
 WHEREAMI=$PWD
@@ -58,7 +58,7 @@ CMAKE_INSTALL_PREFIX=$INSTALL_DIR
 
 # Print out the current configuration
 echo "Build configuration: "
-echo " NVIDIA Jetson Nano"
+echo " NVIDIA Jetson Xavier NX"
 echo " OpenCV binaries will be installed in: $CMAKE_INSTALL_PREFIX"
 echo " OpenCV Source will be installed in: $OPENCV_SOURCE_DIR"
 if [ "$PACKAGE_OPENCV" = "" ] ; then
